@@ -3,8 +3,8 @@
     <output method="text" omit-xml-declaration="yes" indent="no"/>
     <template match="/">resource,start,finish,taskID,summary,outlineLevel,start
 <for-each select="//Projects/Project/Tasks/Task/Assignments/Assignment"><value-of select="concat(@resourceID,',',substring(../../@taskID,1,5),',',substring(../../@start,1,10),',',../../@finish,',',../../@taskID,@summary,',',../../@outlineLevel,',',../../@start,'&#xA;')"/>
-        </for-each>
-    </template>  
+        </for-each>  
+    </template>
 </stylesheet>
 
 
